@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 import ethers from "ethers";
 
 // Using LooksRare Public API,
@@ -6,12 +6,12 @@ import ethers from "ethers";
 // for the collection: 0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258
 // Docs: https://api.looksrare.org/api/documentation
 
-console.log('lets starts');
+console.log("lets starts");
 
 var provider = new ethers.providers.JsonRpcProvider("https://cloudflare-eth.com");
 
 const collectionAddress = "0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258";
-const userAddress = await provider.resolveName('dingaling.eth');
+const userAddress = await provider.resolveName("dingaling.eth");
 
 let mintedTokens = [];
 
